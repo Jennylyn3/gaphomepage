@@ -3,25 +3,69 @@
 @tailwind utilities;
 
 .image-banner { min-height: 510px; width: 100%; }
-button { background-color: aqua;}
+button { background-color: #ffffff;}
 .btn-container .btn-women{
     width: 10%;
     position: absolute;
     padding: 0.8% 0;
-    bottom: 38.5%;
+    bottom: 30.5%;
     left: 33.3%;
 }
 .image-banner .btn-men {
     width: 8.4%;
     position: absolute;
     padding: 0.8% 0;
-    bottom: 38.5%;
+    bottom: 30.5%;
     left: 45.7%;
   }
   .image-banner .btn-video {
     width: 13.4%;
   	position: absolute;
     padding: 0.8% 0;
-    bottom: 38.5%;
+    bottom: 30.5%;
     left: 56.4%;
+  }
+
+
+  /* WE KNOW YOU'LL LOVE */
+  .max-width { max-width: 1280px; margin: 0 auto; }
+  .font-style { font-family: 'Helvetica Neue'; }
+  .c-gray { color: #666; }
+  .slick {
+    width: 255px;
+    padding: 0 10px;
+    min-height: 1px;
+  }
+
+  /* SHOP DIVISION */
+  .c-blue { color: #122344;}
+
+ 
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  .division-container {
+    width: 33.3%;
+    position: relative;
+    padding: 0px 0.25rem 0 0.5rem;
+    margin-bottom: 3rem;
+  }
+  .division-container img {
+    width: 100%;
+    border-style: none;
+  }
+  .text-block {
+    text-align: center;
+    position: absolute;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    /* font-weight: 900; */
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }

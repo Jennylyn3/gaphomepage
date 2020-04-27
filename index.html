@@ -11,7 +11,7 @@
 <body class="p-0 m-0">
 
     <section class="image-banner">
-        <div class="banners">
+        <div class="banners mb-8 relative">
 
                 <div class="promo-img-wrapper">
                     <img src="images/Khaki_Desktop_Banner.jpg" alt="banners">
@@ -26,47 +26,47 @@
           </div>
     </section>
 
-    <section class="promo-slider">
-        <div>
-            <div class="standard-width">
-                <h2>We know you'll love</h2>
+    <section class="promo-slider  mb-8">
+        <div class="slider">
+
+            <div class="max-width relative">
+                <h2 class="uppercase font-normal text-2xl m-0">We know you'll love</h2>
                 <img src="" alt="" class="promo-prev">
-                <div class="promoslide-main">
-                  <div class="content-wrap">
-                    <a href="">
-                      <div class="img-cont"><img class="lazyload" data-src="" alt=""></div>
-                      <div class="cont-text"></div>
-                    </a>
-                  </div>       
-    			<div class="content-wrap">
-                    <div class="img-cont"><img src="" alt=""></div>
-                    <div class="cont-text">New Clothes</div>
-                    </div>
-                   
+
+                <div id="app" class="promoslide-main">
+                    <div class="slick block float-left h-full" v-for="product in products">
+                        <a href="">
+                        <img class="w-full block border-none" :src="product.imgSrc" alt="">
+                        <p class="c-gray text-left leading-tight mt-2 mb-3">{{ product.desc }}</p>
+                        </a>
+                    </div>     
                 </div>
                 <img src="" alt="" class="promo-next">
             </div>
         </div>
-
     </section>
 
     <section class="shop-division">
-        <div class="standard-width">
 
-            <h2>Shop by Division</h2>
-    
-            <div class="container">
-                    <div class="division-containers">
+        <div class="max-width">
+
+            <h2 class="font-style uppercase text-4xl font-light c-blue m-auto mt-8 mb-4 tracking-wide leading-9">Shop by Division</h2>
+            <div id="apps" class="container">
+                    <div class="division-container" v-for="division in divisions">
                         <a href="">
-                                <img class="lazyload" data-src="">
-                            <div class="text-block">
-                            </div>
+                            <img :src="division.imgSrc" alt="">
+                            <div class="text-block font-style uppercase font-black">{{ division.label }}</div>
                         </a>
                     </div>
             </div>
 
         </div>
+
     </section>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="productList.js"></script>
+    <script src="divisions.js"></script>
+
 </body>
 </html>
