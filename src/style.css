@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-banner { min-height: 510px; width: 100%; }
+button { background-color: aqua;}
+.btn-container .btn-women{
+    width: 10%;
+    position: absolute;
+    padding: 0.8% 0;
+    bottom: 38.5%;
+    left: 33.3%;
+}
+.image-banner .btn-men {
+    width: 8.4%;
+    position: absolute;
+    padding: 0.8% 0;
+    bottom: 38.5%;
+    left: 45.7%;
+  }
+  .image-banner .btn-video {
+    width: 13.4%;
+  	position: absolute;
+    padding: 0.8% 0;
+    bottom: 38.5%;
+    left: 56.4%;
+  }
