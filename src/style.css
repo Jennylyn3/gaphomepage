@@ -4,6 +4,8 @@
 
 .image-banner { min-height: 510px; width: 100%; }
 button { background-color: #ffffff;}
+.promo-img-wrapper .mobile { display: none; }
+.special-btn-container { display: none; }
 .btn-container .btn-women{
     width: 10%;
     position: absolute;
@@ -28,44 +30,90 @@ button { background-color: #ffffff;}
 
 
   /* WE KNOW YOU'LL LOVE */
-  .max-width { max-width: 1280px; margin: 0 auto; }
+  /* .max-width { max-width: 1280px; margin: 0 auto; }
   .font-style { font-family: 'Helvetica Neue'; }
   .c-gray { color: #666; }
   .slick {
     width: 255px;
-    padding: 0 10px;
+    padding: 10px;
     min-height: 1px;
   }
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  } */
+
+
 
   /* SHOP DIVISION */
   .c-blue { color: #122344;}
-
- 
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
   .division-container {
     width: 33.3%;
     position: relative;
     padding: 0px 0.25rem 0 0.5rem;
     margin-bottom: 3rem;
   }
-  .division-container img {
-    width: 100%;
-    border-style: none;
-  }
+
   .text-block {
-    text-align: center;
-    position: absolute;
     padding: 10px 16px;
-    background-color: #ffffff;
-    /* font-weight: 900; */
     font-size: 12px;
     letter-spacing: 1.5px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-banner { min-height: auto; margin: 0 auto; }
+    .image-banner .promo-img-wrapper { position: relative; }
+    .promo-img-wrapper .desktop { display: none; }
+    .promo-img-wrapper .mobile { display: block; }
+    .btn-container { display: none; }
+    .special-btn-container { display: block; }
+   
+    .special-btn-container .header {
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      cursor: pointer;
+      text-align: center;
+    }
+    .special-btn-container .header button {
+      text-decoration: none;
+      background-color: transparent;
+      outline: 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 1em 0.5em;
+      line-height: 16px;
+    }
+
+   
+    .shop-division h2 {
+      font-size: 23px;
+      padding-left: 10px;
+    }
+    .shop-division .text-block {
+      position: relative;;
+      top: unset;
+      left: unset;
+      transform: none;
+      font-size: 13px;
+      padding: 15px 0;
+      border: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .containers .division-container {
+      width: 50%;
+      padding: 0 10px;
+      position: relative;
+      margin-bottom: 3rem;
+      font-size: 0;
+      font-weight: 700;
+      text-align: center;
+    }
+  
   }

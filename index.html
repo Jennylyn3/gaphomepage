@@ -14,27 +14,36 @@
         <div class="banners mb-8 relative">
 
                 <div class="promo-img-wrapper">
-                    <img src="images/Khaki_Desktop_Banner.jpg" alt="banners">
+                    <img class="desktop" src="images/Khaki_Desktop_Banner.jpg" alt="banners">
+                    <img class="mobile" src="images/Khaki_Mobile_Banner.webp" alt="banners">
                 </div>
 
                 <div class="btn-container">
-                    <div class=" header items"><a href=""><button class="btn-women">WOMEN</button></a></div>
-                    <div class=" header items"><a href=""><button class="btn-men">MEN</button></a></div>
-                    <div class=" header items"><a href=""><button class="btn-video">WATCH THE VIDEO</button></a></div>
+                    <div><a href=""><button class="btn-women">WOMEN</button></a></div>
+                    <div><a href=""><button class="btn-men">MEN</button></a></div>
+                    <div><a href=""><button class="btn-video">VIDEO</button></a></div>
                 </div>
+                <div class="special-btn-container mx-auto mb-8">
+                    <div class="header"><a href=""><button>WOMEN</button></a></div>
+                    <div class="header"><a href=""><button>MEN</button></a></div>
+                    <div class="header"><a href=""><button>WATCH THE VIDEO</button></a></div>
+                </div>
+
 
           </div>
     </section>
 
-    <section class="promo-slider  mb-8">
+    <!-- <section class="promo-slider  mb-8">
         <div class="slider">
 
             <div class="max-width relative">
-                <h2 class="uppercase font-normal text-2xl m-0">We know you'll love</h2>
-                <img src="" alt="" class="promo-prev">
+                <div class="slick-list">
+                    <div class="slick-track">
+                        <h2 class="uppercase font-normal text-2xl m-0">We know you'll love</h2>
+                        <img src="" alt="" class="promo-prev">
 
-                <div id="app" class="promoslide-main">
-                    <div class="slick block float-left h-full" v-for="product in products">
+                        <div id="app" class="promoslide-main">
+                        <div class="slick block float-left h-full" v-for="product in products">
                         <a href="">
                         <img class="w-full block border-none" :src="product.imgSrc" alt="">
                         <p class="c-gray text-left leading-tight mt-2 mb-3">{{ product.desc }}</p>
@@ -42,20 +51,22 @@
                     </div>     
                 </div>
                 <img src="" alt="" class="promo-next">
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="shop-division">
 
         <div class="max-width">
 
             <h2 class="font-style uppercase text-4xl font-light c-blue m-auto mt-8 mb-4 tracking-wide leading-9">Shop by Division</h2>
-            <div id="apps" class="container">
+            <div id="apps" class="containers flex flex-wrap justify-center">
                     <div class="division-container" v-for="division in divisions">
                         <a href="">
-                            <img :src="division.imgSrc" alt="">
-                            <div class="text-block font-style uppercase font-black">{{ division.label }}</div>
+                            <img class="w-full border-none" :src="division.imgSrc" alt="">
+                            <div class="text-block text-center absolute	bg-white font-style uppercase font-black">{{ division.label }}</div>
                         </a>
                     </div>
             </div>
