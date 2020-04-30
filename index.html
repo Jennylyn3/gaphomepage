@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 </head>
 <body class="p-0 m-0">
 
@@ -36,28 +38,31 @@
 
 
 
-    
+
     <section class="promo-slider  mb-8">
         <div class="slider">
 
             <div class="max-width relative">
                 <div class="slick-list">
+
                     <div class="slick-track">
-                        <h2 class="uppercase font-normal text-2xl m-0">We know you'll love</h2>
-                        
-                        <div id="app" class="promoslide-main">
-                        <div class="slick block float-left h-full" v-for="product in products">
-                        <a href="">
-                        <img class="w-full block border-none" :src="product.imgSrc" alt="">
-                        <p class="c-gray text-left leading-tight mt-2 mb-3">{{ product.desc }}</p>
-                        </a>
-                    </div>     
-                </div>
-                <img src="" alt="" class="promo-prev">
-                <img src="" alt="" class="promo-next">
+                            <h2 class="uppercase font-normal text-2xl m-0">We know you'll love</h2>
+
+                            <div id="app" class="promoslide-main" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                                <div class="slick block float-left h-full" v-for="product in products">
+                                <a href="">
+                                <img class="w-full block border-none" :src="product.imgSrc" alt="">
+                                <p class="c-gray text-left leading-tight mt-2 mb-3">{{ product.desc }}</p>
+                                </a>
+                                </div>     
+                            </div>
+                            <img src="" alt="" class="promo-prev">
+                            <img src="" alt="" class="promo-next">
                     </div>
+
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -85,6 +90,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="productList.js"></script>
     <script src="divisions.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
 </html>
