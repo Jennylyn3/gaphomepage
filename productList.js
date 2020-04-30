@@ -21,6 +21,70 @@ var app = new Vue ({
         {
             "imgSrc": "images/product5.jpg",
             "desc": "Short Sleeve Shirt in Linen-Cotton"
+        },
+        {
+            "imgSrc": "images/product6.jpg",
+            "desc": "Dress"
+        },
+        {
+            "imgSrc": "images/product7.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product8.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product9.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product10.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product11.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product12.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product13.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product14.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product15.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product16.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product17.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product18.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product19.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product20.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
+        },
+        {
+            "imgSrc": "images/product21.webp",
+            "desc": "Vintage Wash Pocket T-shirt"
         }
     ]
 }
